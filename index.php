@@ -28,7 +28,7 @@
     <h1>Hai già un account?</h1>
     <section class="form">
         <div class="login-form">
-          <form method="POST" action="process-login.php">
+          <form method="POST" action="./assets/partials/process-login.php">
             <label for="email">Inserisci l&apos;e-mail:</label>
             <input type="text" id="email" name="email" placeholder="name@example.com" required>
             <div class="password-toggle">
@@ -42,7 +42,7 @@
             
           </form>
           <div class="form-actions">
-          <a href="newaccount.php">Non hai ancora un profilo? <strong>Registrati</strong></a>
+          <a href="newaccount.php">Non hai ancora un profilo? <strong><u>Registrati</u></strong></a>
         </div>
         </div>
     </section>

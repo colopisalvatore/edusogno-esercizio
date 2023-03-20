@@ -109,6 +109,7 @@ text-align: center;
 .form-actions a {
 text-decoration: none;
 color: #2D224C;
+font-weight: 400;
 }
 
 .form-actions a:hover {
