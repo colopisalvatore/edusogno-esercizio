@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header{
+    height: 127px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px -6px #0057FF;
+    border-radius: 0 0 13px 13px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .logo{
+    padding: 0 50px;
+}
+
+h1{
+    text-align: center;
+    color: #134077;
+    margin: 78px 0 22px 0;
+}
+
+.form{    
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+/* LOGIN FORM */
+
+.login-form {
+    width: 660px;
+    background: #FFFFFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    padding: 30px;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-width: 0 0 2px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    color: #ccc;
+    font-weight: 400;
+  }
+
+  .login-form input[type="submit"] {
+    background-color: #0057FF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .login-form input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+  .password-toggle {
+    position: relative;
+  }
+
+  .password-toggle button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .password-toggle button i {
+    color: #0057FF;
+  }
+
+.form-actions {
+margin-top: 30px;
+text-align: center;
+}
+
+.form-actions a {
+text-decoration: none;
+color: #2D224C;
+}
+
+.form-actions a:hover {
+    color: slategray;
+}
