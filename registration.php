@@ -6,9 +6,10 @@
     <?php 
     include './assets/partials/header.php'; 
     include './assets/db/config.php';
-    
     ?>
-    <h1>Hai già un account?</h1>
+    <h1>Registra qui il tuo Account</h1>
+    <!-- Mostra il messaggio di errore/successo se presente -->
+    <?php include './assets/partials/message.php' ?>
     <section class="form">
         <div class="login-form">
             <form method="POST" action="./assets/partials/register.php">
