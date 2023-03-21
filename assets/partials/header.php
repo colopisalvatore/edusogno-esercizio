@@ -5,7 +5,7 @@
     </div>
     <?php if (isset($_SESSION['user_id'])): ?>
         <span id="logoutButtonContainer">
-            <a href="logout.php" class="logout-button">Logout</a>
+            <a href="./assets/partials/logout.php" class="logout-button">Logout</a>
         </span>
     <?php endif; ?>
 </header>
