@@ -19,7 +19,7 @@ function register($name, $surname, $email, $password, $conn)
     $stmt->execute();
     $stmt->close();
 
-    $_SESSION['message'] = 'La registrazione è andata a buon fine! Reinserisci le tue credenziali per visualizzare i tuoi eventi.';
+    $_SESSION['succes_message'] = 'La registrazione è andata a buon fine! Reinserisci le tue credenziali per visualizzare i tuoi eventi.';
     
     header("Location: ../../login.php");
 }

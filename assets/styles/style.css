@@ -116,17 +116,43 @@ font-weight: 400;
     color: slategray;
 }
 
+#recover{
+  color: #2D224C;
+  float: right;
+  text-decoration: none;
+}
+
+#recover:hover{
+  text-decoration: underline;
+}
+
 .error-message {
     width: 30%;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      translate: -50%;
+
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+}
+
+.success-message {
+  width: 30%;
     position: absolute;
     top: 20%;
     left: 50%;
     translate: -50%;
 
-    background-color: #f8d7da;
-    color: #721c24;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+    border-radius: 15px;
     margin-bottom: 20px;
     text-align: center;
 }
+

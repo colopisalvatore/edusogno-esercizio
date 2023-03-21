@@ -24,11 +24,11 @@ function login($email, $password, $conn)
             $_SESSION['user_surname'] = $user['cognome'];
             header("Location: ../../index.php");
         } else {
-            $_SESSION['message'] = 'La password inserita è errata.';
+            $_SESSION['error_message'] = 'La password inserita è errata.';
             header("Location: ../../login.php");
         }
     } else {
-        $_SESSION['message'] = 'Nessun utente trovato con questa email.';
+        $_SESSION['error_message'] = 'Nessun utente trovato con questa email.';
         header("Location: ../../login.php");
     }
 
