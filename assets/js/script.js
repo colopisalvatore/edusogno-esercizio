@@ -10,4 +10,16 @@ function togglePassword() {
       passwordInput.type = "password";
       toggleBtn.innerHTML = '<i class="fas fa-eye-slash"></i>';
     }
+  };
+
+// TIMEOUT MESSAGGIO ERRORE
+document.addEventListener("DOMContentLoaded", function () {
+  const errorMessageContainer = document.querySelector(".error-message");
+
+  if (errorMessageContainer) {
+      // Imposta un timer per nascondere automaticamente il messaggio di errore dopo 5 secondi
+      setTimeout(function () {
+          errorMessageContainer.style.display = "none";
+      }, 5000);
   }
+});
