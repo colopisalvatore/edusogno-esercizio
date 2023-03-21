@@ -115,3 +115,18 @@ font-weight: 400;
 .form-actions a:hover {
     color: slategray;
 }
+
+.error-message {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50%;
+
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
