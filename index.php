@@ -24,27 +24,29 @@
     <title>Edusogno</title>
 </head>
 <body>
-    <?php include './assets/partials/header.php'; ?>
-    <h1>Hai già un account?</h1>
-    <section class="form">
-        <div class="login-form">
-          <form method="POST" action="./assets/partials/process-login.php">
-            <label for="email">Inserisci l&apos;e-mail:</label>
-            <input type="text" id="email" name="email" placeholder="name@example.com" required>
-            <div class="password-toggle">
-            <label for="password">Inserisci la password:</label>
-                <input type="password" id="password" name="password" placeholder="Scrivila Qui" required>
-                <button type="button" onclick="togglePassword()">
-                    <i class="fas fa-eye-slash"></i>
-                </button>
-            </div>
-            <input type="submit" value="ACCEDI">
-            
-          </form>
-          <div class="form-actions">
-          <a href="newaccount.php">Non hai ancora un profilo? <strong><u>Registrati</u></strong></a>
+    <?php 
+    session_start();
+    include './assets/partials/header.php';
+    
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: login.php");
+        exit;
+    }
+
+    ?>
+    <section id="events">
+    <main>
+        <h1>Ciao <span class="username">Nome Utente</span> ecco i tuoi eventi</h1>
+
+        <div class="eventsRow">
+                <div class="single-event">
+                    <h2> Nome Evento </h2>
+                    <p> Data Evento </p>
+                    <button>Join</button>
+                </div>
         </div>
-        </div>
-    </section>
+    </main>
+</section>
+
 </body>
 </html>
