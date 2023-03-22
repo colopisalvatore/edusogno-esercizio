@@ -67,7 +67,7 @@ h1{
     font-weight: 400;
   }
 
-  .login-form input[type="submit"] {
+  .login-form input[type="submit"]{
     background-color: #0057FF;
     color: #fff;
     padding: 10px 20px;
@@ -156,3 +156,53 @@ font-weight: 400;
     text-align: center;
 }
 
+/* INDEX */
+.eventsRow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.single-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.single-event:hover {
+  transform: translateY(-10px);
+}
+
+.single-event h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.single-event p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.single-event button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.single-event button:hover {
+  background-color: #0056b3;
+}
